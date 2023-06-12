@@ -32,6 +32,6 @@ jobs:
     - run: mkdir download && cp target/*.jar download
     - name: upload a Build Artifact
       uses: actions/upload-artifact@v2
-        with:
+      with:
             name: Build
             path: download
