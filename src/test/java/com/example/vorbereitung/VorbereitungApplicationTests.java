@@ -14,5 +14,10 @@ class VorbereitungApplicationTests {
         var expected= 28.35;
         assertEquals(expected, result);
     }
-
+    @Test
+    public void teststonesToKilogram(){
+        var result= sut.stonesToKilograms(1);
+        var expected=6.35;
+        assertEquals(expected,result);
+    }
 }
