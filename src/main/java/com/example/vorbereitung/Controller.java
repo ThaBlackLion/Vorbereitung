@@ -13,5 +13,9 @@ public class Controller {
 
         return i.ouncesToGram(oz);
     }
+        @RequestMapping("/stonesToKilogram")
+        public double stonesToKilogram(@RequestParam double st){
+            return i.stonesToKilograms(st);
+        }
+    }
 
-}
