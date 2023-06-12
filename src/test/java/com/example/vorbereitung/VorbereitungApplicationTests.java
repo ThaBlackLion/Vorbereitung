@@ -3,11 +3,16 @@ package com.example.vorbereitung;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @SpringBootTest
 class VorbereitungApplicationTests {
-
+    Implemantation sut = new Implemantation();
     @Test
-    void contextLoads() {
+    public void testouncesToGram() {
+        var result= sut.ouncesToGram(1);
+        var expected= 28.35;
+        assertEquals(expected, result);
     }
 
 }
